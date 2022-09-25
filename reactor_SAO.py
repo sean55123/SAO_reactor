@@ -239,7 +239,7 @@ class SAO():
         block1_type = self.a.aspen.Tree.FindNode(r"\Data\Blocks\B1").AttributeValue(6)
         block2_type = self.a.aspen.Tree.FindNode(r"\Data\Blocks\B2").AttributeValue(6)
         block3_type = self.a.aspen.Tree.FindNode(r"\Data\Blocks\B3").AttributeValue(6)
-
+##
         score = self.objective()
         xs = [0, 0]
         ys = [self.best_score, self.best_score]
