@@ -201,6 +201,12 @@ class SAO():
 
     
     def objective(self):
+        """
+        Give penalty while:
+        The ratio of length to diameter larger than 5
+        When the temperature can not be control
+        When process temperature is too close to coolant temperature
+        """
         self.conv, overshoot, close = self.a.get_result()
         if self.best_score == 0:
             conv_origin = self.a.get_result()[0][2] 
